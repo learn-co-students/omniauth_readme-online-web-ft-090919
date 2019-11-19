@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'dotenv-rails'
 gem 'thin'
 
 # Use jquery as the JavaScript library
@@ -29,7 +29,8 @@ gem 'turbolinks'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'omniauth'
+gem 'omniauth-facebook'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
