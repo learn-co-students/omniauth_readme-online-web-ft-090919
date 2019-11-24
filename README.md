@@ -52,7 +52,7 @@ The code is unfamiliar, but we can guess what's going on from the characteristic
 ### `ENV`
 The `ENV` constant refers to a global hash for your entire computer environment. You can store any key-value pairs in this hash, so it's a very useful place to keep credentials that we don't want to be managed by Git or displayed on GitHub (especially if your GitHub repo is public). The most common error students run into is that when `ENV["PROVIDER_KEY"]` is evaluated in the OmniAuth initializer it returns `nil`. Later attempts to authenticate with the provider will cause some kind of `4xx` error because the provider doesn't recognize the app's credentials (because they're evaluating to `nil`).
 
-As you can gather from the initializer code, we're going to need two pieces of information from Facebook in order to get authentication working: the application key and secret that will identify our app to Facebook.
+As you.you can gather from the initializer code, we're going to need two pieces of information from Facebook in order to get authentication working: the application key and secret that will identify our app to Facebook.
 
 Log in to [the Facebook developer site](https://developers.facebook.com/). In the `My Apps` dropdown menu at the top-right of the page, select `Create App`, and a modal should appear. Fill out the requested information and click `Create App ID`. Click `Skip` at the bottom of the `Select a Scenario` page. You should now be on the Dashboard. Scroll down to the `Add a Product` section and click `Set Up` on the `Facebook Login` tile:
 
