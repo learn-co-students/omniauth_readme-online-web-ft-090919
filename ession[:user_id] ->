@@ -1,0 +1,16 @@
+
+[1mFrom:[0m /mnt/c/users/owner/dev/flatiron/labs/omniauth_readme-online-web-ft-090919/app/controllers/sessions_controller.rb @ line 4 SessionsController#create:
+
+     [1;34m3[0m: [32mdef[0m [1;34mcreate[0m
+ =>  [1;34m4[0m:    binding.pry
+     [1;34m5[0m:     @user = [1;34;4mUser[0m.find_or_create_by([35muid[0m: auth[[31m[1;31m'[0m[31muid[1;31m'[0m[31m[0m]) [32mdo[0m |u|
+     [1;34m6[0m:       u.name = auth[[31m[1;31m'[0m[31minfo[1;31m'[0m[31m[0m][[31m[1;31m'[0m[31mname[1;31m'[0m[31m[0m]
+     [1;34m7[0m:       u.email = auth[[31m[1;31m'[0m[31minfo[1;31m'[0m[31m[0m][[31m[1;31m'[0m[31memail[1;31m'[0m[31m[0m]
+     [1;34m8[0m:       u.image = auth[[31m[1;31m'[0m[31minfo[1;31m'[0m[31m[0m][[31m[1;31m'[0m[31mimage[1;31m'[0m[31m[0m]
+     [1;34m9[0m:     [32mend[0m
+    [1;34m10[0m: 
+    [1;34m11[0m:     session[[33m:user_id[0m] = @user.id
+    [1;34m12[0m:  
+    [1;34m13[0m:     render [31m[1;31m'[0m[31mwelcome/home[1;31m'[0m[31m[0m
+    [1;34m14[0m:   [32mend[0m
+
